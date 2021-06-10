@@ -32,7 +32,8 @@ h2{
     /* text-shadow: 1px 1px grey; */
     color: white;
     margin-bottom: 35px;
-    text-align: center;
+    text-align: left;
+    text-indent: 45px;
 }
 
 h3{
@@ -41,6 +42,14 @@ h3{
     text-shadow: 1px 1px grey;
     color: white;
     margin-bottom: 10px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 p{
@@ -88,6 +97,10 @@ ul.dotted{
     width: 20%;
 }
 
+.w25{
+    width: 25%;
+}
+
 .w30{
     width: 30%;
 }
@@ -100,10 +113,32 @@ ul.dotted{
     width: 50%;
 }
 
+.w60{
+    width: 60%;
+}
+
+.w80{
+    width: 80%;
+}
+
 /* ESTILOS GERAIS */
 .content{
     width: 80%;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    background-color: #0c71b4;
+    border-radius: 40px;
+}
+
+/* .content div{
+    width: 75%;;
+    margin: auto;
+} */
+
+.content p{
+    color: white;
 }
 
 .card{
@@ -309,104 +344,63 @@ main{
 
     nav{
         width: 100%;
-    }
-
-    #slider{
-        width: 90%;
-    }    
+    }   
 }
 
 /* ESPECÍFICO DA PÁGINA */
-/* Slider: https://www.youtube.com/watch?v=pGHOaY4dhAA */
-#slider{
-    overflow: hidden;
-    width: 70%;
-    margin: auto;
+/* FORMS */
+form{
+    margin-left: 45px;
 }
 
-#slider figure{
-    position: relative;
-    margin: 0;
-    left: 0;
-    animation: 40s sliderAnimation infinite;
-    width: 500%;
+.formsInside{
+    margin-bottom: 10px;
+    color: white;
 }
 
-@keyframes sliderAnimation{
-    0%{
-        left: 0;
-    }
-    10%{
-        left: 0;
-    }
-
-    15%{
-        left: -100%;
-    }
-    25%{
-        left: -100%;
-    }
-
-    30%{
-        left: -200%;
-    }
-    40%{
-        left: -200%;
-    }
-
-    45%{
-        left: -300%;
-    }
-    55%{
-        left: -300%;
-    }
-
-    60%{
-        left: -400%;
-    }
-    70%{
-        left: -400%;
-    }
-
-    90%{
-        left: 0;
-    }
-}
-
-#slider figure img{
-    width: 20%;
-    float: left;
-}
-/* CONTEÚDO */
-.intro{
-    height: 1000px;
+.formsInput{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: #033d64;
     width: 100%;
-    padding: 0;
+    height: 20px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0;
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #033d64;
 }
 
-.container > .card{
-    width: 20%;
-    height: auto;
-    margin: 0;
-    padding: 40px;
+input[type='radio']:checked:after {
+    background-color: #055183;
+    /* border: 2px solid #217D6B; */
 }
 
-.container > .card p{
-    height: auto;
-    padding-bottom: 10%;
-    display: flex;
-    align-items: center;
+#txtArea{
+    height: 300px;
 }
 
-/* OUTROS */
-#bg1{
-    /* background-image: url("../images/bg1.jpeg");
-    background-size: cover; */
-    padding-top: 30px;
+#divMaps{
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+
+#sendButton{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80px;
+    height: 30px;
+    background-color: #033d64;
+    padding: 5px 9px 5px 9px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
 }

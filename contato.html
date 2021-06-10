@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head></head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="styles/reset.css"> 
+        <link rel="stylesheet" type="text/css" href="styles/contato.css">
+
+        <link rel="icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
+
+        <title>Nye - Contato</title>
+    </head>
+    <body>
+        <header>
+            <div class="line headerLine">
+                <div class="column w20 center">
+                    <img src="images/logo.png" alt="logo" id="logo">
+                    <h1>Nye</h1>
+                </div>
+                <div class="column w40 center">
+                    <label for="search"></label>
+                    <input id="search" type="text" placeholder="Pesquise aqui" class="search"/>
+                    <input type="submit" value="Buscar" class="searchBu"/>
+                </div>
+                <div class="column w40 center">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html"><input type="button" value="Home"></a></li>
+                            <li><a href="empresa.html"><input type="button" value="Empresa"></a></li>
+                            <li><a href="portifolio.html"><input type="button" value="Portifólio"></a></li>
+                            <li><a href="#"><input type="button" class="active" value="Contato"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="line content center">
+                <div class="line">
+                    <div class="column w40">
+                        <div>
+                            <h2>Meios de Contato</h2>
+                            <p><strong>Whatsapp: </strong><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511955555555" target="_blank" >(11) 9 5555-5555</a></p>
+                            <p><strong>Email: </strong><a href="mailto:email@email.com" target="_blank">email@email.com</a></p>
+                            
+                        </div>
+                        <div>
+                            <h2 class="spaceBefore">Formulário de contato:</h2>
+                            <div>
+                                <form action="" method="POST">
+                                    <div class="formsInside">
+                                        <input id="nome" type="text" placeholder="Nome completo" class="formsInput"/>
+                                    </div>
+                                    <div class="formsInside">
+                                        <div class="center">
+                                            <input type="radio" name="Pessoa" value="0" class="formsRadio"/>Pessoa física
+                                            <input type="radio" name="Pessoa" value="1" class="formsRadio"/>Pessoa jurídica
+                                        </div>                                    
+                                    </div>
+                                    <div class="formsInside">
+                                        <input id="email" type="email" placeholder="Email" class="formsInput"/>
+                                    </div>
+                                    <div class="formsInside">
+                                        <p>Selecione o Estado: </p>
+                                        <select class="formsInput">
+                                            <option>São Paulo</option>
+                                            <option>Rio de Janeiro</option>
+                                            <option>Bahia</option>
+                                            <option>Mato Grosso</option>
+                                            <option>Espírito Santo</option>
+                                            <option>Outro</option>
+                                        </select>
+                                    </div>
+                                    <div class="formsInside">
+                                        <p>Digite aqui um resumo do projeto:</p>
+                                        <textarea name="msg" class="formsInput" id="txtArea"></textarea>
+                                    </div>
+                                    <div class="formsInside">
+                                    <p>Envie os esboço do projeto:</p>
+                                        <div class="center">
+                                            <input type="file" class="spaceBefore"/>
+                                        </div>
+                                    </div>
+                                    <div class="center">
+                                        <input type="submit" value="Enviar" id="sendButton"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column w60">
+                        <div>
+                            <h2>Nosso endereço</h2>
+                            <p>Praça Floriano Peixoto - Santo Amaro, São Paulo - SP</p>
+                            <p class="emphasis"><strong>Horário de funcionamento:</strong></p>
+                            <p><strong>Segunda a sexta:</strong> das 06:30 às 20:00</p>
+                            <p><strong>Sábado:</strong> das 07:00 às 19:30</p>
+                            <p><strong>Domingo:</strong> das 07:30 às 19:30</p>
+                            <div id="divMaps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.6880216554055!2d-46.70958398447419!3d-23.651341270807634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce505510e6e2a3%3A0x7cf411f85eb8c2b2!2sPra%C3%A7a%20Floriano%20Peixoto%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-010!5e0!3m2!1spt-BR!2sbr!4v1617287097309!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="line footer">
+                <div class="column w20">
+                    <h3>Menu:</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="portifolio.html">Portifólio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="column w20">
+                    <h3>Atendimento:</h3>
+                    <p><strong>Segunda a sexta:</strong> das 06:30 às 20:00</p>
+                    <p><strong>Sábado:</strong> das 07:00 às 19:30</p>
+                </div>
+                <div class="column w20">
+                    <h3>Localização</h3>
+                    <p><strong>SENAI Suíço-Brasileira:</strong> <a href="https://goo.gl/maps/JXdWNcUySF8pVLy19">R. Bento Branco de Andrade Filho, 379 - Santo Amaro, São Paulo - SP, 04757-000</a></p>
+                </div>
+
+                <div class="column w20">
+                    <h3>Contatos:</h3>
+                    <p><strong>Whatsapp:</strong> <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511955555555" target="_blank" >(11) 9 5555-5555</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:email@email.com" target="_blank">email@email.com</a></p>
+                </div>
+            </div>
+            <div class="line center end">
+                <div class="column">
+                    <p>Site desenvolvido por <em>Kelvin Ribeiro</em>. &#169; <script>document.write(new Date().getFullYear());</script></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<!-- https://w3.mha.com.br/wp/ -->
