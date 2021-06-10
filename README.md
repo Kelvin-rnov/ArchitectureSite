@@ -12,7 +12,7 @@ Para concluir o objetivo do site, almeja-se:
 - Tornar o menu fixo em todas páginas (ao rolar a página, deve sempre estar visível);
 - Corrigir a resposividade do vídeo na página "Empresa";
 - Na página "Contato":
-  > Corrigir responsividade das colunas: w40 e w60 não assumem os valores de 40% e 60%, respectivamente;
-  > Estilizar tag "select", de maneira a deixá-la como as "input text";
-  > Estilizar a tag "input file".
+  - Corrigir responsividade das colunas: w40 e w60 não assumem os valores de 40% e 60%, respectivamente;
+  - Estilizar tag "select", de maneira a deixá-la como as "input text";
+  - Estilizar a tag "input file".
 
